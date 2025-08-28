@@ -1,4 +1,4 @@
 FROM tomcat:10.1-jdk17-temurin
-COPY --from=build /app/target/*.war /usr/local/tomcat/webapps/ROOT.war
+COPY ch04_ex1_survey.war /usr/local/tomcat/webapps/ROOT.war
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
